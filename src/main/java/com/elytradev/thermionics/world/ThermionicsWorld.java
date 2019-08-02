@@ -128,20 +128,6 @@ public class ThermionicsWorld {
 			@SuppressWarnings("unused")
 			WorldProvider provider = DimensionManager.createProviderFor(CONFIG_DIMENSION_ID_NEOHELL);
 		}
-		
-		/* Obsidian is a glossy, vitreous rock, useful because when struck it easily forms conchoidal fractures,
-		 * meaning you can hit it with an ordinary rock, and it shatters, making a super-sharp edge you can use for an
-		 * axe head or a knife blade. It's frequently found
-		 * just lying around volcanic islands. None of this describes what we see in Minecraft when we look at an
-		 * obsidian block or the way we use that block.
-		 */
-		Blocks.OBSIDIAN.setUnlocalizedName("thermionics_world.basalt");
-		Blocks.OBSIDIAN.setHardness(2.5f);
-		Blocks.OBSIDIAN.setHarvestLevel("pickaxe",2);
-		
-		//Ender Chest and Enchantment Table should have the same hardness as raw Basalt
-		Blocks.ENDER_CHEST.setHardness(2.5f);
-		Blocks.ENCHANTING_TABLE.setHardness(2.5f);
 
 		MinecraftForge.EVENT_BUS.register(this);
 		MinecraftForge.EVENT_BUS.register(proxy);
